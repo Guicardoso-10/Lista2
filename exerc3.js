@@ -1,5 +1,5 @@
 import {questionInt} from 'readline-sync'
-let numero = questionInt("Digite um numero de 1 a 10: ")
+const numero = questionInt("Digite um numero de 1 a 10: ")
 while(numero <= 10) {
     console.log("tabuada do " + numero + ":")
     console.log(numero + "x0 = " + numero*0)
