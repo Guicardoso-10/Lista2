@@ -8,6 +8,6 @@ if (produto1 <= produto2 && produto1 <= produto3) {
 else if (produto2 <= produto1 && produto2 <= produto3) {
     console.log("compre o segundo produto")
 }
-else if (produto3 <= produto1 && produto3 <= produto2) {
+else {
     console.log("compre o terceiro produto")
 }

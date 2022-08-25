@@ -2,7 +2,7 @@ console.log("lê uma lista de 10 números e os mostra na ordem inversa")
 import {questionInt} from 'readline-sync'
 const lista = []
 for (let i = 1; i <= 10; i++) {
-    const numero = questionInt('Digite o numero' + i + ":")
+    const numero = questionInt('Digite o numero' + i + ": ")
     lista.push(numero)
 }
 console.log(lista)
