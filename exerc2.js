@@ -1,29 +1,20 @@
 import {questionInt} from 'readline-sync'
-let numero = questionInt("digite um numero de 1 a 7: ")
-let diaSemana = null
-switch (numero) {
-    case 1: 
-        diaSemana = "domingo"
-        break
-    case 2: 
-        diaSemana = "segunda-feira"
-        break
-    case 3: 
-        diaSemana = "terça-feira"
-        break
-    case 4:
-        diaSemana = "quarta-feira"
-        break
-    case 5: 
-        diaSemana = "quinta-feira"
-        break
-    case 6: 
-        diaSemana = "sexta-feira"
-        break
-    case 7: 
-        diaSemana = "sábado"
-        break
-    default: console.log("valor inválido")
-    
+
+const diasSemana = [
+    "domingo",
+    "segunda-feira",
+    "terça-feira",
+    "quarta-feira",
+    "quinta-feira",
+    "sexta-feira",
+    "sábado"
+]
+
+const numero = questionInt("digite um numero de 1 a 7: ")
+const diaSemana = diasSemana[numero - 1]
+
+if (diaSemana == undefined) {
+    console.log("valor inválido")
+} else {
+    console.log("o dia da semana é: " + diaSemana)
 }
-if (diaSemana != null) {console.log("o dia da semana é:" + diaSemana)}
